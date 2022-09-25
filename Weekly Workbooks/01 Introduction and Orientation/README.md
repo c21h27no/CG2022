@@ -1,5 +1,5 @@
 ## Introduction and Orientation
-### <a href='https://web.microsoftstream.com/group/30b11686-b685-4727-9af6-7f7580c74777?view=videos' target='_blank'> Weekly Briefing ![](../../resources/icons/briefing.png) </a>
+### <a href='https://uob.sharepoint.com/:f:/r/teams/UnitTeams-COMS30020-2022-23-TB-1-A/Shared%20Documents/General/Recordings/View%20Only?csf=1&web=1&e=aTmZb2' target='_blank'> Weekly Briefing ![](../../resources/icons/briefing.png) </a>
 ### Task 1: Introduction
 
 
@@ -8,7 +8,7 @@ The aim of this introductory workbook is to ease you gently into the first week 
 If you didn't manage to join the introduction briefing session, make sure you have watched the "Weekly Briefing" video linked to at the top of this page before attempting the tasks in this workbook !  
 
 
-# 
+#
 ### Task 2: Language and Libraries
 
 
@@ -34,11 +34,11 @@ In order to make things a little tidier, we have provided a "wrapper" object aro
 - `clearPixels` clears all pixel colours (from the whole window)
 - `pollForInputEvents` checks to see if there are any events waiting to be processed (returns true if there are !)
 
-Examples of how to call the methods of the `DrawingWindow` class are included in the template project introduced later in this workbook. 
-  
+Examples of how to call the methods of the `DrawingWindow` class are included in the template project introduced later in this workbook.
 
 
-# 
+
+#
 ### Task 3: Using Your Own Computer with an Existing OS
 
 
@@ -63,10 +63,10 @@ If you can't get your package manager to install SDL2 (or if you don't have a pa
 
 **Hints & Tips:**  
 The code template (that we will introduce later in this workbook) comes bundled with the GLM library built-in, so there is no need for you to install this yourselves !
-  
 
 
-# 
+
+#
 ### Task 4: Using Your Own Computer with a Fresh OS
 
 
@@ -79,14 +79,14 @@ Alternatively (if you are confident to do so) it might be worth considering a "f
 If using a virtual machine, you should avoid using display scaling (i.e. use VirtualBox in 100% "Unscaled Output" mode) otherwise you may experience a reduction in window manager performance.  
 
 
-# 
+#
 ### Task 5: Using the Lab Machines
 
 
 As an alternative to getting SDL2 installed on your own computer, you might choose to compile and run your code on the lab machines in MVB (which have all of the required software installed). The lab machines can either be used physically (whilst you are actually in the lab) or remotely (via remote desktop services). In order to gain remote access you will need to use the _X2Go_ client. Full instructions for installing and running the _X2Go_ client can be found in <a href="https://uob.sharepoint.com/sites/itservices/SitePages/fits-engineering-linux-x2go.aspx" target="_blank">this how-to guide</a>. It is worth noting however that the quality of your experience using this approach will vary depending on the quality of your internet connection.
 
 
-   
+
 
 
 **Hints & Tips:**  
@@ -97,7 +97,7 @@ in particular the rapid response teaching support helpline !
 If you get a warning that `GLX is not supported` when remote logging in to the lab machines using X2Go then you will need to disable hardware acceleration in the `RedNoise` project. Open the `libs/sdw/DrawingWindow.cpp` file and change the line `uint32_t flags = SDL_WINDOW_OPENGL;` so that it now reads `uint32_t flags = SDL_WINDOW_FOREIGN;` This will disable hardware acceleration and _should_ solve the problem - it may run more slowly, but at least it will run !  
 
 
-# 
+#
 ### Task 6: The Template Project
 
 
@@ -126,7 +126,7 @@ On some platforms you may need to include `<cstring>` in the `DrawingWindow` cla
 On some platforms you might need to alter the `include` statement in the `DrawingWindow.h` file from `"SDL.h"` to `"SDL2/SDL.h"` to allow the compiler to find the SDL library.  
 
 
-# 
+#
 ### Task 7: Understanding the Template
 
 
@@ -143,7 +143,7 @@ You will note from the `handleEvent` method that it is possible to respond to bo
 Clicking the mouse inside the SDL window will cause a screenshot of the current content of the window to be saved to the filesystem. You will notice that both PPM and BMP files are generated. The reason for this is that some platforms and image viewer can be fussy about the format of image files. Pick whichever file format works best on your platform and work with that.  
 
 
-# 
+#
 ### End of workbook
 
 Make sure you push all your work to your GitHub repository !<br>
