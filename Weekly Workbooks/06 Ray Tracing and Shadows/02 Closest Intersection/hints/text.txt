@@ -1,0 +1,3 @@
+Your function is going to need to return various details about the intersection point found. To help you in achieving this, we have provided a class in the `libs/sdw` folder called `RayTriangleIntersection` that you might like to use to store and return all of the intersection details.
+
+A single ray fired into a scene may well intersect with a number of different triangles (e.g. the front of the blue box, the back of the blue box, the back wall of the room etc.). Remember that we are interested in the intersection that is **closest** to the camera (i.e. has the smallest `t`).
