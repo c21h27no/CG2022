@@ -122,7 +122,7 @@ You will probably run into a few problems creating a consistent and complete sha
 
 # 
 ### Task 6: Shadow Acne
- <a href='06%20Shadow%20Acne/slides/segment-1.pdf' target='_blank'> ![](../../resources/icons/slides.png) </a> <a href='06%20Shadow%20Acne/audio/segment-1.mp4' target='_blank'> ![](../../resources/icons/audio.png) </a>
+ <a href='06%20Shadow%20Acne/slides/segment-1.pdf' target='_blank'> ![](../../resources/icons/slides.png) </a> <a href='06%20Shadow%20Acne/audio/segment-1.mp4' target='_blank'> ![](../../resources/icons/audio.png) </a> <a href='06%20Shadow%20Acne/audio/segment-2.mp4' target='_blank'> ![](../../resources/icons/audio.png) </a>
 
 When implementing your shadow you may notice that is has a "speckled" appearance and/or spills out of the area where the shadow should appear (as illustrated in the image below). This effect is known as "shadow acne" and it a commonly encountered phenomenon in ray traced shadows. View the slides and audio narration linked to above for a discussion of the cause of this effect and an explanation of one solution to this problem. Once you have gained this understanding, add some additional code to your project to remove this phenomenon from your render.  
 
