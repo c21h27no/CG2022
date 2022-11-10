@@ -1,0 +1,7 @@
+In the real world, light bounces off objects (potentially multiple times) in order to illuminate "hard to reach" areas of a model (even areas that are in shadow). View the slides and audio narration for more insight into this notion of "Indirect Illumination". As you might imagine, calculating this kind of lighting (which would involve multiple bounces) would be computationally very expensive. It is possible however to implement a plausible approximation to such lighting with very little additional effort (both in terms of computational power and lines of code ;o)
+
+Two approaches to creating such "ambient" lighting are commonly used:
+- Minimum threshold: An IF statement (or call to the `max` function) is used to ensure that the brightness of any point never falls below a certain threshold level.
+- Universal supplement: The brightness of a pixel is calculated, then a fixed amount of additional light is _added_ to it (the same amount to each and every pixel).
+
+Each approach has a different impact on the overall colour profile of the rendered image. However, both can be used to achieve the desired effect as illustrated in the image below. Compare the shadow regions of this image with those of the previous week's workbook (which included no ambient lighting).

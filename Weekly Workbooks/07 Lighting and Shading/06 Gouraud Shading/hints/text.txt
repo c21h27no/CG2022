@@ -1,0 +1,4 @@
+One of the trickiest parts of this task is applying the _correct_ weighting to each vertex brightness. Watch the start of the Barycentric coordinates video closely in order to work out which vertices you need to apply `u` and `v` to in order to calculate the correct colour weighting. Note that you will need an additional variable (let's call it `w`) to hold the _residual_ area of the triangle (i.e. the area not part of `u` or `v`). You will need to apply this multiplier to the remaining vertex of your triangle.
+
+The Cornell Box isn't the most useful model for testing Gouraud shading (it's hard to "smooth off" the edges of a cube !). For this reason, we have provided a simple <a href="resources/sphere.obj" target="_blank">additional OBJ model</a> for you to use when testing your code.
+
