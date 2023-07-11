@@ -101,7 +101,7 @@ If you get a warning that `GLX is not supported` when remote logging in to the l
 ### Task 6: The Template Project
 
 
-In order to help get you started, we have provided a template project called <a href="https://github.com/COMS30020/RedNoise" target="_blank">RedNoise</a>. This project provides the structure that you will need for the weekly workbooks, as well as illustrating the use of the `DrawingWindow` methods. In order to work with the template project, you must first **FORK** the <a href="https://github.com/COMS30020/RedNoise" target="_blank">repository</a> into **your own GitHub workspace**.
+In order to help get you started, we have provided a template project called <a href="extras/RedNoise" target="_blank">RedNoise</a>. This project provides the structure that you will need for the weekly workbooks, as well as illustrating the use of the `DrawingWindow` methods.
 
 Once you have created a fork, clone it locally so that you then extend it with your own code. Periodically push the additions you had made to the project up onto your GitHub repository. It is **essential** that you create a fork first and don't just clone the original repository (because you don't have permission push changes into the COMS30020 GitHub organisation !) We will use your repository during the final marking process, so it is essential that you use GitHub throughout this unit.
 
@@ -130,7 +130,7 @@ On some platforms you might need to alter the `include` statement in the `Drawin
 ### Task 7: Understanding the Template
 
 
-It is useful to spend a little time getting to know the structure of the <a href="https://github.com/COMS30020/RedNoise/blob/main/src/RedNoise.cpp" target="_blank">main class</a> in the template project. We are going to be using it a lot over the next few weeks, so it is going to be important. The main function in the template contains a "forever" loop which:
+It is useful to spend a little time getting to know the structure of the <a href="extras/RedNoise/src/RedNoise.cpp" target="_blank">main class</a> in the template project. We are going to be using it a lot over the next few weeks, so it is going to be important. The main function in the template contains a "forever" loop which:
 
 1. Polls the event queue for incoming mouse and keyboard events
 2. Draws the scene to the screen memory buffer

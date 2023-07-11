@@ -77,7 +77,7 @@ For help resolving problems with remote access to the lab machines, check out th
 <p>If you get a warning that <code>GLX is not supported</code> when remote logging in to the lab machines using X2Go then you will need to disable hardware acceleration in the <code>RedNoise</code> project. Open the <code>libs/sdw/DrawingWindow.cpp</code> file and change the line <code>uint32_t flags = SDL_WINDOW_OPENGL;</code> so that it now reads <code>uint32_t flags = SDL_WINDOW_FOREIGN;</code> This will disable hardware acceleration and <em>should</em> solve the problem - it may run more slowly, but at least it will run !</p>
 <h1 id="section-4"></h1>
 <h3 id="task-6-the-template-project">Task 6: The Template Project</h3>
-<p>In order to help get you started, we have provided a template project called <a href="https://github.com/COMS30020/RedNoise" target="_blank">RedNoise</a>. This project provides the structure that you will need for the weekly workbooks, as well as illustrating the use of the <code>DrawingWindow</code> methods. In order to work with the template project, you must first <strong>FORK</strong> the <a href="https://github.com/COMS30020/RedNoise" target="_blank">repository</a> into <strong>your own GitHub workspace</strong>.</p>
+<p>In order to help get you started, we have provided a template project called <a href="extras/RedNoise" target="_blank">RedNoise</a>. This project provides the structure that you will need for the weekly workbooks, as well as illustrating the use of the <code>DrawingWindow</code> methods. </p>
 <p>Once you have created a fork, clone it locally so that you then extend it with your own code. Periodically push the additions you had made to the project up onto your GitHub repository. It is <strong>essential</strong> that you create a fork first and don’t just clone the original repository (because you don’t have permission push changes into the COMS30020 GitHub organisation !) We will use your repository during the final marking process, so it is essential that you use GitHub throughout this unit.</p>
 <p>In order to help you compile, link and run the <code>RedNoise</code> project, a Makefile has been provided for you inside the project root folder. This makefile contains multiple rules to build code for different purposes:</p>
 <ul>
@@ -95,7 +95,7 @@ On some platforms you may need to include <code>&lt;cstring&gt;</code> in the <c
 <p>On some platforms you might need to alter the <code>include</code> statement in the <code>DrawingWindow.h</code> file from <code>"SDL.h"</code> to <code>"SDL2/SDL.h"</code> to allow the compiler to find the SDL library.</p>
 <h1 id="section-5"></h1>
 <h3 id="task-7-understanding-the-template">Task 7: Understanding the Template</h3>
-<p>It is useful to spend a little time getting to know the structure of the <a href="https://github.com/COMS30020/RedNoise/blob/main/src/RedNoise.cpp" target="_blank">main class</a> in the template project. We are going to be using it a lot over the next few weeks, so it is going to be important. The main function in the template contains a “forever” loop which:</p>
+<p>It is useful to spend a little time getting to know the structure of the <a href="extras/src/RedNoise.cpp" target="_blank">main class</a> in the template project. We are going to be using it a lot over the next few weeks, so it is going to be important. The main function in the template contains a “forever” loop which:</p>
 <ol type="1">
 <li>Polls the event queue for incoming mouse and keyboard events</li>
 <li>Draws the scene to the screen memory buffer</li>
